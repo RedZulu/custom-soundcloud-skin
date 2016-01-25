@@ -12,26 +12,25 @@
   <body>
   <script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
   <script src='//w.soundcloud.com/player/api.js'></script>
-  <div class="player">
-  <span class='info'></span>
-  <div class="waveform"></div>
-  <div class="position"></div>
-  </div>
+
 
   <form class="form-wrapper cf">
       <input type="text" name="selector" placeholder="Search here..." required>
       <button type="submit">Search</button>
   </form>
 
-  <iframe id="terms" class="sc-widget" src="//w.soundcloud.com/player/?url=//soundcloud.com/zomboy" >
+  <div class="player">
+  <span class='info'></span>
+  <div class="waveform"></div>
+  <div class="position"></div>
+  </div>
+
+
+  <iframe id="searchURL" class="sc-widget" src="//w.soundcloud.com/player/?url=//soundcloud.com/" >
   </iframe>
 
-
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
   <script src="js/index.js"></script>
-
-
   </body>
 
 </html>

@@ -18,9 +18,7 @@ $(document).on('submit', function(e){
       var selector = $("input[name]").val();
       return selector;
   };
-  document.getElementById('terms').src = "//w.soundcloud.com/player/?url=//soundcloud.com/" + search();
-  // setInfo();
-
+  document.getElementById('searchURL').src = "//w.soundcloud.com/player/?url=//soundcloud.com/" + search();
 
   var player = SC.Widget($('iframe.sc-widget')[0]);
   var pOffset = $('.player').offset();
@@ -44,9 +42,11 @@ $(document).on('submit', function(e){
 
   $(document).on('keydown', function(e){
     switch(e.keyCode){
-      case 32:
-        player.toggle();
-        setInfo();
+      case 90:
+        player.pause();
+      break;
+      case 88:
+        player.play();
       break;
       case 39:
         player.next();
